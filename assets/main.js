@@ -6,7 +6,7 @@ import TerrainEffect from './modules/terrainEffect.js';
 import initGsapAnimations from './modules/gsapAnimations.js';
 import MouseRotateEffect from './modules/MouseRotateEffect.js';
 import initPreloader from './modules/preloader.js';
-
+import createTimeline from './modules/video-scroll.js';
 document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initCustomCursor();
@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initGsapAnimations();
     MouseRotateEffect();
     initPreloader();
+    createTimeline();
+    window.addEventListener("resize", createTimeline);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
