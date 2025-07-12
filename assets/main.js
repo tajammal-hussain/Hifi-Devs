@@ -6,16 +6,20 @@ import initGsapAnimations from './modules/gsapAnimations.js';
 import initPreloader from './modules/preloader.js';
 import createTimeline from './modules/video-scroll.js';
 import rail from './modules/rail.js';
-
+import menu
+ from './modules/menu.js';
 document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initTextAnimations();
     initSwiperSlider();
     initGsapAnimations();
     //MouseRotateEffect();
-    initPreloader();
+    if(document.querySelector('body').classList.contains('home')) {
+        initPreloader();
+    }
     createTimeline();
     rail();
+    menu();
     window.addEventListener("resize", createTimeline);
 });
 

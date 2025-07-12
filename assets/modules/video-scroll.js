@@ -4,7 +4,9 @@ gsap.registerPlugin(ScrollTrigger);
 let animationCtx;
 
 export default createTimeline = () => {
-
+    if (!document.querySelector('body').classList.contains('home')) {
+      return;
+    }
     const heroTitle = document.querySelector('.hero-title');
     const heroVideoContainer = document.querySelector('.hero-video-container');
     const heroVideoSecond = document.querySelector('.hero-video-second');
