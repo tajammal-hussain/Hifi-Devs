@@ -9,17 +9,17 @@ export default function initGsapAnimations() {
 
     
     // Find all sphere trigger elements
-    document.querySelectorAll('.--trigger-sphere').forEach(triggerElement => {
-        ScrollTrigger.create({
-            trigger: triggerElement,
-            start: 'top center',
-            end: 'bottom center',
-            onEnter: () => document.body.classList.add('--is-sphere'),
-            onLeave: () => document.body.classList.remove('--is-sphere'),
-            onEnterBack: () => document.body.classList.add('--is-sphere'),
-            onLeaveBack: () => document.body.classList.remove('--is-sphere')
-        });
-    });
+    // document.querySelectorAll('.--trigger-sphere').forEach(triggerElement => {
+    //     ScrollTrigger.create({
+    //         trigger: triggerElement,
+    //         start: 'top center',
+    //         end: 'bottom center',
+    //         onEnter: () => document.body.classList.add('--is-sphere'),
+    //         onLeave: () => document.body.classList.remove('--is-sphere'),
+    //         onEnterBack: () => document.body.classList.add('--is-sphere'),
+    //         onLeaveBack: () => document.body.classList.remove('--is-sphere')
+    //     });
+    // });
 
     // Find all white trigger elements
     document.querySelectorAll('.--trigger-white').forEach(triggerElement => {
