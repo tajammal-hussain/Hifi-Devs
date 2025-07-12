@@ -19,13 +19,13 @@ export default function MouseRotateEffect() {
             const deltaX = e.clientX - centerX;
             const deltaY = e.clientY - centerY;
 
-            const rotateX = gsap.utils.clamp(-9, 9, deltaY / 30);
-            const rotateY = gsap.utils.clamp(-9, 9, -deltaX / 30);
+          // const rotateX = gsap.utils.clamp(-9, 9, deltaY / 30);
+            //const rotateY = gsap.utils.clamp(-9, 9, -deltaX / 30);
             const translateX = gsap.utils.clamp(-10, 10, -deltaX / 60);
             const translateY = gsap.utils.clamp(-10, 10, -deltaY / 60);
 
-            rotateXTo(rotateX);
-            rotateYTo(rotateY);
+            //rotateXTo(rotateX);
+           // rotateYTo(rotateY);
             xTo(translateX);
             yTo(translateY);
         });
